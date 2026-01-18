@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contatta Cartoleria Dudù. Visita il nostro negozio a Torino, compila il form o chiama direttamente.">
+    
+    <title>Contatti | Cartoleria Dudù</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="contatti">
+
+<!-- ============= NAVBAR ============= -->
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">📚</div>
+            Dudù
+        </a>
+        
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="chi-siamo.html">Chi Siamo</a></li>
+            <li class="nav-item"><a href="prodotti.html">Prodotti</a></li>
+            <li class="nav-item"><a href="servizi.html">Servizi</a></li>
+            <li class="nav-item active"><a href="contatti.html">Contatti</a></li>
+        </ul>
+        
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- ============= HERO SEZIONE ============= -->
+<section class="hero" style="padding: 4rem 2rem;">
+    <div class="hero-content">
+        <h1>Contattaci</h1>
+        <p class="hero-subtitle">Siamo qui per aiutarti</p>
+    </div>
+</section>
+
+<!-- ============= INFO CONTATTI ============= -->
+<section class="container">
+    <h2 class="text-center">Come Raggiungerci</h2>
+    
+    <div class="contact-info" data-animate>
+        <div class="info-item">
+            <div class="icon">📍</div>
+            <h3>Indirizzo</h3>
+            <p>Via Roma 123<br>10000 Torino<br>Italia</p>
+        </div>
+        
+        <div class="info-item">
+            <div class="icon">📞</div>
+            <h3>Telefono</h3>
+            <p><a href="tel:+39011123456" style="color: var(--primary); text-decoration: none;">011 123 4567</a></p>
+            <p style="font-size: 0.9rem; color: #999; margin-top: 1rem;">
+                Disponibile lunedì-sabato, 09:00-19:00
+            </p>
+        </div>
+        
+        <div class="info-item">
+            <div class="icon">📧</div>
+            <h3>Email</h3>
+            <p><a href="mailto:info@cartoleriadadudu.it" style="color: var(--primary); text-decoration: none;">info@cartoleriadadudu.it</a></p>
+            <p style="font-size: 0.9rem; color: #999; margin-top: 1rem;">
+                Ti risponderemo entro 24 ore
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ============= MAPPA ============= -->
+<section class="alt-bg">
+    <div class="container">
+        <h2 class="text-center">Dove Siamo</h2>
+        
+        <div class="map-container">
+            <!-- Placeholder per mappa Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2820.427068651095!2d7.68681!3d45.070590!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47874a54e3b1e1e1%3A0x1234567890abcdef!2sVia%20Roma%20123%2C%20Torino!5e0!3m2!1sit!2sit!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <div style="max-width: 700px; margin: 2rem auto; background: var(--light); padding: 2rem; border-radius: 12px; border-left: 5px solid var(--primary);">
+            <h3 style="color: var(--primary); margin-bottom: 1rem;">Orari di Apertura</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div>
+                    <p style="margin: 0.5rem 0;"><strong>Lunedì - Sabato</strong></p>
+                    <p style="margin: 0; color: #666;">09:00 - 19:00</p>
+                </div>
+                <div>
+                    <p style="margin: 0.5rem 0;"><strong>Domenica</strong></p>
+                    <p style="margin: 0; color: #666;">⛔ Chiuso</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============= FORM CONTATTI ============= -->
+<section class="container">
+    <div style="max-width: 600px; margin: 0 auto;">
+        <h2 class="text-center">Invia un Messaggio</h2>
+        <p class="text-center" style="color: #666; margin-bottom: 2rem;">
+            Compila il form qui sotto e ti contatteremo al più presto.
+        </p>
+        
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Nome *</label>
+                <input type="text" id="name" name="name" placeholder="Il tuo nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="La tua email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Telefono (opzionale)</label>
+                <input type="tel" id="phone" name="phone" placeholder="Il tuo telefono">
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Oggetto (opzionale)</label>
+                <input type="text" id="subject" name="subject" placeholder="Es: Richiesta preventivo stampe">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Messaggio *</label>
+                <textarea id="message" name="message" placeholder="Il tuo messaggio" required></textarea>
+            </div>
+            
+            <div id="formMessage" class="form-message"></div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Invia Messaggio
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- ============= FAQ ============= -->
+<section class="alt-bg">
+    <div class="container">
+        <h2 class="text-center">Domande Frequenti</h2>
+        
+        <div style="max-width: 700px; margin: 3rem auto;">
+            <details style="margin-bottom: 1rem; padding: 1.5rem; background: var(--light); border-radius: 8px; cursor: pointer; border: 2px solid var(--border);">
+                <summary style="font-weight: 600; color: var(--primary); user-select: none;">
+                    Qual è il tempo di consegna per i lavori personalizzati?
+                </summary>
+                <p style="margin-top: 1rem; color: #666;">
+                    Il tempo di consegna dipende dal tipo di lavoro. Generalmente:
+                    <br>• Stampe: 2-3 giorni lavorativi
+                    <br>• Rilegature: 24-48 ore
+                    <br>• Articoli personalizzati: 5-10 giorni lavorativi
+                    <br>Contattaci per progetti urgenti!
+                </p>
+            </details>
+            
+            <details style="margin-bottom: 1rem; padding: 1.5rem; background: var(--light); border-radius: 8px; cursor: pointer; border: 2px solid var(--border);">
+                <summary style="font-weight: 600; color: var(--primary); user-select: none;">
+                    Accettate ordini online?
+                </summary>
+                <p style="margin-top: 1rem; color: #666;">
+                    Al momento, gli ordini vengono gestiti principalmente in negozio, 
+                    per telefono o via email. Contattaci direttamente per ricevere 
+                    un preventivo personalizzato.
+                </p>
+            </details>
+            
+            <details style="margin-bottom: 1rem; padding: 1.5rem; background: var(--light); border-radius: 8px; cursor: pointer; border: 2px solid var(--border);">
+                <summary style="font-weight: 600; color: var(--primary); user-select: none;">
+                    Quali formati di file accettate per le stampe?
+                </summary>
+                <p style="margin-top: 1rem; color: #666;">
+                    Accettiamo: PDF, JPG, PNG, TIFF, EPS, e altri formati standard. 
+                    Se non sei sicuro, contattaci! Possiamo aiutarti a preparare 
+                    il file corretto.
+                </p>
+            </details>
+            
+            <details style="margin-bottom: 1rem; padding: 1.5rem; background: var(--light); border-radius: 8px; cursor: pointer; border: 2px solid var(--border);">
+                <summary style="font-weight: 600; color: var(--primary); user-select: none;">
+                    Offrite sconti per ordini in volume?
+                </summary>
+                <p style="margin-top: 1rem; color: #666;">
+                    Sì! Per ordini significativi, offriamo prezzi speciali. 
+                    Contattaci con i dettagli del tuo progetto e ti faremo 
+                    un preventivo competitivo.
+                </p>
+            </details>
+            
+            <details style="padding: 1.5rem; background: var(--light); border-radius: 8px; cursor: pointer; border: 2px solid var(--border);">
+                <summary style="font-weight: 600; color: var(--primary); user-select: none;">
+                    Potete aiutarmi a progettare il mio layout di stampa?
+                </summary>
+                <p style="margin-top: 1rem; color: #666;">
+                    Assolutamente! Il nostro team può offrire consulenza sulla 
+                    progettazione. Contattiamo per discutere il tuo progetto 
+                    e verificare se abbiamo le competenze per aiutarti.
+                </p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- ============= SOCIAL MEDIA ============= -->
+<section class="container text-center">
+    <h2>Seguici sui Social</h2>
+    <p style="color: #666; margin-bottom: 2rem;">
+        Rimani aggiornato con le nostre ultime novità, offerte e progetti
+    </p>
+    
+    <div class="social-links" style="justify-content: center; gap: 2rem;">
+        <a href="https://facebook.com" target="_blank" style="width: 60px; height: 60px; font-size: 1.8rem;">f</a>
+        <a href="https://instagram.com" target="_blank" style="width: 60px; height: 60px; font-size: 1.8rem;">📷</a>
+        <a href="https://twitter.com" target="_blank" style="width: 60px; height: 60px; font-size: 1.8rem;">𝕏</a>
+    </div>
+</section>
+
+<!-- ============= FOOTER ============= -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cartoleria Dudù</h3>
+                <p>La tua cartoleria moderna con un'anima artigianale.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Link Rapidi</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                    <li><a href="prodotti.html">Prodotti</a></li>
+                    <li><a href="servizi.html">Servizi</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contatti</h3>
+                <p>📍 Via Roma 123, 10000 Torino</p>
+                <p>📞 011 123 4567</p>
+                <p>📧 info@cartoleriadadudu.it</p>
+                <p>🕐 Lun-Sab: 09:00-19:00 | Dom: Chiuso</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Seguici</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank">f</a>
+                    <a href="https://instagram.com" target="_blank">📷</a>
+                    <a href="https://twitter.com" target="_blank">𝕏</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cartoleria Dudù. Tutti i diritti riservati.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+
+</body>
+</html>
